@@ -8,7 +8,16 @@ The `PGD_Attack` function is used to iteratively perturb the input image `x` tow
 
 ## Results
 
-The experimental results show the accuracy of adversarial images as a function of Epsilon. The Projected Gradient Descent method consistently outperforms the Fast Sign Gradient Method, reaching lower accuracy in all tests and achieving 0 accuracy before FSGM. However, PGD is computationally expensive compared to FSGM. 
+The table below shows the accuracy of the adversarial image as a function of Epsilon for both the Fast Gradient Sign Method and the Projected Gradient Descent method:
+
+| Epsilon | Fast Gradient Sign Method | Projected Gradient Descent |
+|---------|---------------------------|-----------------------------|
+| 0.05    | 0.335                     | 0.296                       |
+| 0.1     | 0.014                     | 0.007                       |
+| 0.15    | 0.002                     | 0                           |
+| 0.2     | 0                         | 0                           |
+
+The tests directly calculated the accuracy of the model on adversarial images without making use of error bars and confidence levels for both methods.
 
 ## Experimental Setup
 
