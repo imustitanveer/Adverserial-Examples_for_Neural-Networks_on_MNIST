@@ -6,7 +6,16 @@ This project explores adversarial attacks on neural networks using different met
 
 The `PGD_Attack` function is used to iteratively perturb the input image `x` towards maximizing the loss function, while ensuring the modified image stays within the ϵ boundary. The `fgsm_attack` function implements the Fast Gradient Sign Method for comparison. 
 
-## Results
+# Results
+
+**FGSM** | **PGD**
+--- | ---
+<img src="https://github.com/imustitanveer/Adverserial-Examples_for_Neural-Networks_on_MNIST/raw/main/adverserial%20images/FGSM/0.png"> | <img src="https://github.com/imustitanveer/Adverserial-Examples_for_Neural-Networks_on_MNIST/raw/main/adverserial%20images/PGDM/5.png">
+<img src="https://github.com/imustitanveer/Adverserial-Examples_for_Neural-Networks_on_MNIST/raw/main/adverserial%20images/FGSM/1.png"> | <img src="https://github.com/imustitanveer/Adverserial-Examples_for_Neural-Networks_on_MNIST/raw/main/adverserial%20images/PGDM/6.png">
+<img src="https://github.com/imustitanveer/Adverserial-Examples_for_Neural-Networks_on_MNIST/raw/main/adverserial%20images/FGSM/2.png"> | <img src="https://github.com/imustitanveer/Adverserial-Examples_for_Neural-Networks_on_MNIST/raw/main/adverserial%20images/PGDM/7.png">
+<img src="https://github.com/imustitanveer/Adverserial-Examples_for_Neural-Networks_on_MNIST/raw/main/adverserial%20images/FGSM/3.png"> | <img src="https://github.com/imustitanveer/Adverserial-Examples_for_Neural-Networks_on_MNIST/raw/main/adverserial%20images/PGDM/8.png">
+<img src="https://github.com/imustitanveer/Adverserial-Examples_for_Neural-Networks_on_MNIST/raw/main/adverserial%20images/FGSM/5.png"> | <img src="https://github.com/imustitanveer/Adverserial-Examples_for_Neural-Networks_on_MNIST/raw/main/adverserial%20images/PGDM/9.png">
+
 
 The table below shows the accuracy of the adversarial image as a function of Epsilon for both the Fast Gradient Sign Method and the Projected Gradient Descent method:
 
@@ -26,8 +35,4 @@ The `evaluate_on_adversarial_fgsm` and `evaluate_on_adversarial_pgd` functions e
 ## Usage
 
 The project includes the implementation of the adversarial attack methods and evaluation functions. To use the project, clone the repository and run the provided code. 
-
-## Experimental Results Images
-
-The folder `results_images` contains images of the original and adversarial examples generated using the FGSM and PGD methods. 
 
